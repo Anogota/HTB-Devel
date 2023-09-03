@@ -29,3 +29,8 @@ Another step to find extenstion executed is interecept with Burp traffic and the
 ![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/fb28a512-fa26-4afb-9eec-d5d67f259b94)
 
 and also go to google, and there we can find extenstion .aspx
+
+5.Which metasploit reconnaissance module can be used to list possible privilege escalation paths on a compromised system?
+first we need turn on metasploit by command: msfconsole -q 
+And then write: search 
+

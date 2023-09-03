@@ -25,4 +25,7 @@ I go to google and find something about aspnet_client on hacktricks, the extensi
 
 ![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/fac28888-698c-40a5-b65a-e68af49bb78a)
 
+Another step to find extenstion executed is interecept with Burp traffic and there we can find 
+![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/fb28a512-fa26-4afb-9eec-d5d67f259b94)
 
+and also go to google, and there we can find extenstion .aspx

